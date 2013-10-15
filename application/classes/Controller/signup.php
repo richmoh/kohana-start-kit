@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Signup extends Controller {
+class Controller_Signup extends Controller_Template {
 
 	public function action_index()
 	{
