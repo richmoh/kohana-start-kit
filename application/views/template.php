@@ -13,38 +13,33 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="media/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="media/bootstrap/dist/css/bootstrap-theme.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="/media/flatui/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="/media/flatui/bootstrap/css/prettify.css">
-        <link rel="stylesheet" href="/media/flatui/css/flat-ui.css">
+        
+        
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body class="<?php if(isset($classes)) { echo $classes; } ?>">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
+        <div id="main" class="container">
         <?php echo $view ?>
-
+        </div>    
+            
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         
-        <!-- FlatUI JS =============================-->
-        <script src="/media/flatui/js/jquery-1.8.3.min.js"></script>
-        <script src="/media/flatui/js/jquery-ui-1.10.3.custom.min.js"></script>
-        <script src="/media/flatui/js/jquery.ui.touch-punch.min.js"></script>
-        <script src="/media/flatui/js/bootstrap.min.js"></script>
-        <script src="/media/flatui/js/bootstrap-select.js"></script>
-        <script src="/media/flatui/js/bootstrap-switch.js"></script>
-        <script src="/media/flatui/js/flatui-checkbox.js"></script>
-        <script src="/media/flatui/js/flatui-radio.js"></script>
-        <script src="/media/flatui/js/jquery.tagsinput.js"></script>
-        <script src="/media/flatui/js/jquery.placeholder.js"></script>
-        <script src="/media/flatui/js/jquery.stacktable.js"></script>
+        <!-- Bootstrap JS =============================-->
+        <!--script src="/media/bootstrap/assets/js/jquery.js"></script-->
+        <script src="media/bootstrap/dist/js/bootstrap.js"></script>        
         <script src="http://vjs.zencdn.net/4.1/video.js"></script>
-        <script src="/media/flatui/js/application.js"></script>
+        
+        
         
         
         <script src="js/main.js"></script>
