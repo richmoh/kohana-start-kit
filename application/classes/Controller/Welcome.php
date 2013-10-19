@@ -11,5 +11,10 @@ class Controller_Welcome extends Controller_Template {
 	{
 		$this->response->body('hello, world!');
 	}
+    
+	public function action_signup()
+	{
+		$this->template->view = new View('signup');
+	}
 
 } // End Welcome
